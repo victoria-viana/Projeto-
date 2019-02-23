@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  cpf: MyString
+  rg: MyString
+  celular: MyString
+  email: MyString
+  caminhao: MyString
+  placacaminhao: MyString
+  renavancaminhao: MyString
+  cegonha: MyString
+  placacegonha: MyString
+  renavancegonha: MyString
+
+two:
+  nome: MyString
+  cpf: MyString
+  rg: MyString
+  celular: MyString
+  email: MyString
+  caminhao: MyString
+  placacaminhao: MyString
+  renavancaminhao: MyString
+  cegonha: MyString
+  placacegonha: MyString
+  renavancegonha: MyString

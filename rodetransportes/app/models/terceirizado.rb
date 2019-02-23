@@ -1,0 +1,2 @@
+class Terceirizado < ApplicationRecord
+end

@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Terceirizados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Cpf</th>
+      <th>Rg</th>
+      <th>Celular</th>
+      <th>Email</th>
+      <th>Caminhao</th>
+      <th>Placacaminhao</th>
+      <th>Renavancaminhao</th>
+      <th>Cegonha</th>
+      <th>Placacegonha</th>
+      <th>Renavancegonha</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @terceirizados.each do |terceirizado| %>
+      <tr>
+        <td><%= terceirizado.nome %></td>
+        <td><%= terceirizado.cpf %></td>
+        <td><%= terceirizado.rg %></td>
+        <td><%= terceirizado.celular %></td>
+        <td><%= terceirizado.email %></td>
+        <td><%= terceirizado.caminhao %></td>
+        <td><%= terceirizado.placacaminhao %></td>
+        <td><%= terceirizado.renavancaminhao %></td>
+        <td><%= terceirizado.cegonha %></td>
+        <td><%= terceirizado.placacegonha %></td>
+        <td><%= terceirizado.renavancegonha %></td>
+        <td><%= link_to 'Show', terceirizado %></td>
+        <td><%= link_to 'Edit', edit_terceirizado_path(terceirizado) %></td>
+        <td><%= link_to 'Destroy', terceirizado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Terceirizado', new_terceirizado_path %>
