@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Estoques</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Veiculo</th>
+      <th>Placa</th>
+      <th>Cor</th>
+      <th>Ano</th>
+      <th>Chassi</th>
+      <th>Chave</th>
+      <th>Funciona</th>
+      <th>Banco</th>
+      <th>Dataentrada</th>
+      <th>Reboque</th>
+      <th>Enderecocoleta</th>
+      <th>Tipoentrada</th>
+      <th>Datasaida</th>
+      <th>Local</th>
+      <th>Situacao</th>
+      <th>Transportado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @estoques.each do |estoque| %>
+      <tr>
+        <td><%= estoque.veiculo %></td>
+        <td><%= estoque.placa %></td>
+        <td><%= estoque.cor %></td>
+        <td><%= estoque.ano %></td>
+        <td><%= estoque.chassi %></td>
+        <td><%= estoque.chave %></td>
+        <td><%= estoque.funciona %></td>
+        <td><%= estoque.banco %></td>
+        <td><%= estoque.dataentrada %></td>
+        <td><%= estoque.reboque %></td>
+        <td><%= estoque.enderecocoleta %></td>
+        <td><%= estoque.tipoentrada %></td>
+        <td><%= estoque.datasaida %></td>
+        <td><%= estoque.local %></td>
+        <td><%= estoque.situacao %></td>
+        <td><%= estoque.transportado %></td>
+        <td><%= link_to 'Show', estoque %></td>
+        <td><%= link_to 'Edit', edit_estoque_path(estoque) %></td>
+        <td><%= link_to 'Destroy', estoque, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Estoque', new_estoque_path %>

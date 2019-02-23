@@ -1,0 +1,97 @@
+<%= form_with(model: estoque, local: true) do |form| %>
+  <% if estoque.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(estoque.errors.count, "error") %> prohibited this estoque from being saved:</h2>
+
+      <ul>
+      <% estoque.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :veiculo %>
+    <%= form.text_field :veiculo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :placa %>
+    <%= form.text_field :placa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cor %>
+    <%= form.text_field :cor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ano %>
+    <%= form.text_field :ano %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chassi %>
+    <%= form.text_field :chassi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chave %>
+    <%= form.text_field :chave %>
+  </div>
+
+  <div class="field">
+    <%= form.label :funciona %>
+    <%= form.text_field :funciona %>
+  </div>
+
+  <div class="field">
+    <%= form.label :banco %>
+    <%= form.text_field :banco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataentrada %>
+    <%= form.text_field :dataentrada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reboque %>
+    <%= form.text_field :reboque %>
+  </div>
+
+  <div class="field">
+    <%= form.label :enderecocoleta %>
+    <%= form.text_field :enderecocoleta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipoentrada %>
+    <%= form.text_field :tipoentrada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :datasaida %>
+    <%= form.text_field :datasaida %>
+  </div>
+
+  <div class="field">
+    <%= form.label :local %>
+    <%= form.text_field :local %>
+  </div>
+
+  <div class="field">
+    <%= form.label :situacao %>
+    <%= form.text_field :situacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transportado %>
+    <%= form.text_field :transportado %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

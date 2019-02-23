@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_23_181723) do
+ActiveRecord::Schema.define(version: 2019_02_23_181950) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,27 @@ ActiveRecord::Schema.define(version: 2019_02_23_181723) do
     t.string "celular"
     t.string "whatsapp"
     t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "estoques", force: :cascade do |t|
+    t.string "veiculo"
+    t.string "placa"
+    t.string "cor"
+    t.string "ano"
+    t.string "chassi"
+    t.string "chave"
+    t.string "funciona"
+    t.string "banco"
+    t.string "dataentrada"
+    t.string "reboque"
+    t.string "enderecocoleta"
+    t.string "tipoentrada"
+    t.string "datasaida"
+    t.string "local"
+    t.string "situacao"
+    t.string "transportado"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

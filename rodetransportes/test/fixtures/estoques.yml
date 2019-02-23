@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  veiculo: MyString
+  placa: MyString
+  cor: MyString
+  ano: MyString
+  chassi: MyString
+  chave: MyString
+  funciona: MyString
+  banco: MyString
+  dataentrada: MyString
+  reboque: MyString
+  enderecocoleta: MyString
+  tipoentrada: MyString
+  datasaida: MyString
+  local: MyString
+  situacao: MyString
+  transportado: MyString
+
+two:
+  veiculo: MyString
+  placa: MyString
+  cor: MyString
+  ano: MyString
+  chassi: MyString
+  chave: MyString
+  funciona: MyString
+  banco: MyString
+  dataentrada: MyString
+  reboque: MyString
+  enderecocoleta: MyString
+  tipoentrada: MyString
+  datasaida: MyString
+  local: MyString
+  situacao: MyString
+  transportado: MyString
